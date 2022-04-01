@@ -10,8 +10,8 @@ layersDir="${1:?}"
 platformDir="${2:?}"
 
 # create a shim cache layer
-cacheDir="${layersDir}/lite"
+cacheDir="${layersDir}/jhlite"
 mkdir -p "${cacheDir}"
-echo "cache = true" > ${layersDir}/lite.toml
+echo "cache = true" > ${layersDir}/jhlite.toml
 
 "${bpDir}/bin/compile" "$(pwd)" "${cacheDir}" "${platformDir}/env"
