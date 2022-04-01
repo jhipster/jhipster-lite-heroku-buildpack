@@ -22,5 +22,5 @@ cd $BUILD_DIR
 mkdir -p target
 
 if ! curl -sfL -o target/jhlite.jar "${jar_url_base}.jar"; then
-  curl -sfL -o target/jhlite.jar "${jar_url_base}.war"
+  curl -sfL -o target/jhlite.jar "${jar_url_base}.jar"
 fi

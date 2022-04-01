@@ -1,7 +1,7 @@
 api = "0.2"
 
 [buildpack]
-id = "jhipster/lite"
+id = "jhipster/jhlite"
 
 version = "0.1"
 name = "JHipster Lite"
