@@ -10,8 +10,8 @@ layersDir="${1:?}"
 platformDir="${2:?}"
 
 # create a shim cache layer
-cacheDir="${layersDir}/registry"
+cacheDir="${layersDir}/lite"
 mkdir -p "${cacheDir}"
-echo "cache = true" > ${layersDir}/registry.toml
+echo "cache = true" > ${layersDir}/lite.toml
 
 "${bpDir}/bin/compile" "$(pwd)" "${cacheDir}" "${platformDir}/env"
