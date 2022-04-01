@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# bin/release <build-dir>
+
+BUILD_DIR=$1
+
+echo "default_process_types:"
+echo "web: java $JAVA_OPTS -Dserver.port=$PORT -jar target/*.jar"
