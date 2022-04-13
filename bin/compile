@@ -15,7 +15,7 @@ source <(curl -s --retry 3 -L $BUILDPACK_STDLIB_URL)
 
 export_env $ENV_DIR "." "JAVA_OPTS|JAVA_TOOL_OPTIONS"
 
-jhlite_version=${JHIPSTER_LITE_VERSION:-"0.0.15"}
+jhlite_version=${JHIPSTER_LITE_VERSION:-"0.0.16"}
 jar_url_base="${JHIPSTER_LITE_WAR_URL:-"https://github.com/jhipster/jhipster-lite/releases/download/v${JHIPSTER_LITE_VERSION}/jhlite-${JHIPSTER_LITE_VERSION}"}"
 
 cd $BUILD_DIR
